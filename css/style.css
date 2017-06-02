@@ -350,10 +350,10 @@ li.expanded.active-trail.dropdown
     color: white !important;
 }
 .slide-link p {
-    color: #b4a486;
+    color: white;
 }
 .slide-link h2 {
-    color: #b4a486;
+    color: white;
 }
 .owl-controls{
     text-align: center;
