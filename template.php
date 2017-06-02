@@ -2,40 +2,40 @@
 /**
  * Implements hook_preprocess_HOOK().
  */
-function oc_harrypotter_preprocess_print(&$variables) {
+function borgerneshus_preprocess_print(&$variables) {
   $node = $variables['node'];
   $variables['content'] = strstr($node->content, '</h2>');
 }
 /*
  * In here we will handle custom backgrounds.
  */
-function oc_harrypotter_preprocess_html(&$vars) {   
- oc_harrypotter_oc_custom_backgrounds();
+function borgerneshus_preprocess_html(&$vars) {   
+ borgerneshus_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
  $path_parts = explode('/', $path);
  
- drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/responsive-sd.css');
- drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/responsive-md.css');
- //drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-news-frontpage.css');
+ drupal_add_css(drupal_get_path('theme', 'borgerneshus') . '/css/responsive-sd.css');
+ drupal_add_css(drupal_get_path('theme', 'borgerneshus') . '/css/responsive-md.css');
+ //drupal_add_css(drupal_get_path('theme', 'borgerneshus.dk') . '/css/view-hp-news-frontpage.css');
   /* @var $path_parts type */
   if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer' || $path_parts[0] == 'mit' || $path_parts[0] == 'nyheder') {
-     drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
+     drupal_add_css(drupal_get_path('theme', 'borgerneshus') . '/css/view-hp-events.css');
   } elseif ($path_parts[0] == 'events' && $path_parts[1] == 'aktiviteter') {
-    drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events-glokationer.css');
+    drupal_add_css(drupal_get_path('theme', 'borgerneshus') . '/css/view-hp-events-glokationer.css');
 }
 
  if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer') {
-    drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
+    drupal_add_js(drupal_get_path('theme', 'borgerneshus') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
   }
 
-  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');
+  drupal_add_css(drupal_get_path('theme', 'borgerneshus') . '/css/view-hp-events/view-hp-events.media.css');
   if(drupal_is_front_page())
     {
     $meta_description = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
     '#attributes' => array(
-      'content' => 'Ingen efterårsferie i Odense uden Harry Potter Festival! I efterårsferiens sidste dage fyldes Odense af oplevelser for alle med hang til magi og trylleri - uanset alder.',
+      'content' => 'borgerneshus.dk',
       'name' =>  'description',
     )
   );
@@ -46,21 +46,21 @@ function oc_harrypotter_preprocess_html(&$vars) {
     */
         drupal_add_css('.bootstrap-twocol-stacked .row:nth-child(1) {height: 90vh !important;} .bootstrap-twocol-stacked .row:nth-child(2) {background-color: url("/sites/all/themes/oc_harrypotter/images/transparent_black.png"");}', 'inline');
     }
-    drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/p2b_ticket_status_ajax.js');
+    drupal_add_js(drupal_get_path('theme', 'borgerneshus') . '/js/p2b_ticket_status_ajax.js');
     
     
 }
 /*
  * Modify page variables
  */
-function oc_harrypotter_preprocess_page(&$variables) {
+function borgerneshus_preprocess_page(&$variables) {
      $variables['secondary_nav'] = menu_tree('menu-menu-right');
      $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
 }
 /**
  * Helper function; Load node by title
  */
-function node_load_by_title($title, $node_type) {
+function borgerneshus_node_load_by_title($title, $node_type) {
   $query = new EntityFieldQuery();
   $entities = $query->entityCondition('entity_type', 'node')
       ->propertyCondition('type', $node_type)
@@ -78,7 +78,7 @@ function node_load_by_title($title, $node_type) {
 /*
  * Helpers
  */
-function oc_harrypotter_oc_custom_backgrounds()
+function borgerneshus_oc_custom_backgrounds()
 {
   $path = drupal_get_path_alias();
   $front = "*";
@@ -97,19 +97,16 @@ function oc_harrypotter_oc_custom_backgrounds()
      }
   }
   elseif (drupal_match_path($path, $events)) {
-    $node = node_load_by_title('arrangementer baggrund', 'background');
+    $node = borgerneshus_node_load_by_title('arrangementer baggrund', 'background');
   }
   elseif (drupal_match_path($path, $news)) {
-    $node = node_load_by_title('nyheder baggrund', 'background');
+    $node = borgerneshus_node_load_by_title('nyheder baggrund', 'background');
   }
   elseif (drupal_match_path($path, $statisk)) {
-    $node = node_load_by_title('statisk baggrund', 'background');
-  }
-  elseif (drupal_match_path($path, $hpevents)) {
-    $node = node_load_by_title('hp-events baggrund', 'background');
+    $node = borgerneshus_node_load_by_title('statisk baggrund', 'background');
   }
   elseif (drupal_match_path($path, $front)) {
-    $node = node_load_by_title('forside baggrund', 'background');
+    $node = borgerneshus_node_load_by_title('forside baggrund', 'background');
   }
 
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
@@ -163,7 +160,7 @@ function oc_harrypotter_oc_custom_backgrounds()
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-function oc_harrypotter_preprocess_node(&$variables, $hook) {
+function borgerneshus_preprocess_node(&$variables, $hook) {
 
   if (isset($variables['content']['field_place2book_tickets']['#bundle']) && $variables['content']['field_place2book_tickets']['#bundle'] == 'events') {
 
@@ -231,7 +228,7 @@ function oc_harrypotter_preprocess_node(&$variables, $hook) {
  * Implements hook_preprocess_panels_pane().
 *
 */
-function oc_harrypotter_preprocess_panels_pane(&$vars) {
+function borgerneshus_preprocess_panels_pane(&$vars) {
   // Suggestions base on sub-type.
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '__', $vars['pane']->subtype);
 
@@ -246,7 +243,7 @@ function oc_harrypotter_preprocess_panels_pane(&$vars) {
  *        hard to override.
  *
  */
-function oc_harrypotter_place2book_ticketsinfo($variables) {
+function borgerneshus_place2book_ticketsinfo($variables) {
       $output = '';
   $place2book_id = $variables['place2book_id'];
   $url = $variables['url'];
@@ -281,7 +278,7 @@ function oc_harrypotter_place2book_ticketsinfo($variables) {
 /*
  * Make pictures outputtet via views responsive
  */
-function oc_harrypotter_preprocess_image(&$variables) {
+function borgerneshus_preprocess_image(&$variables) {
    if(isset($variables['style_name'])) {
        // this is an image style used in drupal's image styles
     if($variables['style_name'] == "hp_event_list_thumbnail" || $variables['style_name'] == "hp_event_glokationer_thumbnail")  {
@@ -293,7 +290,7 @@ function oc_harrypotter_preprocess_image(&$variables) {
 /*
  * Alter gallery captions
  */
- function oc_harrypotter_juicebox_image_data_alter(&$data)
+ function borgerneshus_juicebox_image_data_alter(&$data)
  {
      if(!empty($data['caption']))
      {

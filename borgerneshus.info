@@ -1,5 +1,5 @@
-name = OC Harry Potter
-description = Harry potter festival drupal theme
+name = borgerneshus.dk
+description = borgerneshus.dk
 core = 7.x
 base theme = bootstrap
 

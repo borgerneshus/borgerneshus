@@ -5,7 +5,7 @@
     box-shadow: -0.5em -0.5em #978769, -1em -1em #766648;
 }
 a{
-    color: #be1e2d;
+    color: white;
 }
 
 /**
@@ -21,13 +21,14 @@ body {
   position: relative;
   font-family: Verdana, Geneva, sans-serif;
   color: #000;
+  color: white;
 }
 .view-empty
 {
-    color: #B4A486 !important;
+    color: white !important;
 }
 .breadcrumb{
-    background-color: #000000 !important;
+    background-color: #0D2036 !important;
     
 }
 .breadcrumb li a
@@ -55,12 +56,12 @@ body {
 .well {
     border: none;
     background-color: transparent;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_brown.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/transparent_brown.png');
 }
 .pane-glokationer, .pane-menu-tree {
     border: none;
     background-color: transparent;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     padding-bottom: 2%;
     color: #d3d3d3;
 }
@@ -78,7 +79,7 @@ body {
     text-transform: uppercase;
 }
 .pane-glokationer .field-content > a {
-    background-color: #b3a485;
+    background-color: #0D2036;
     color: #000;
     font-weight: bold;
     margin-bottom: 2%;
@@ -153,8 +154,8 @@ body {
 }
 .footer
 {
-   color: #B4A486  !important;
-   background-color: #000000;
+   color: white  !important;
+   background-color: #0D2036;
    width: 100%;
    border-top: 0px solid black;
    display:inline-block;
@@ -188,17 +189,17 @@ body {
     font-size: 20px;
 }
 .region-footer-left section ul li a,.region-footer-middle section ul li a,.region-footer-rigth section ul li a{
-    color: #B4A486;
+    color: white;
     text-align: center;
 }
 .region-footer-left section ul li a:hover,.region-footer-middle section ul li a:hover,.region-footer-rigth section ul li a:hover
 {
-    background-color: #000000 !important;
+    background-color: #0D2036 !important;
 }
 .page-header
 {
     color: #B4A486;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     padding-left: 13px;
     padding-top:2px;
     border-radius: 25px;
@@ -211,14 +212,14 @@ body {
 */
 .tabs--primary
 {
-    background-color: #b3a485;
+    background-color: #0D2036;
 }
 .tabs--primary a
 {
     color: black;
 }
 #user-login , .profile{
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     color: #B4A486;
     padding:10px;
 }
@@ -227,13 +228,13 @@ body {
 */
 .pane-hp-events, .pane-view-galleries
 {
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
 }
 .pane-view-galleries
 {
     
     height:auto;
-    color: #B4A486;
+    color: white;
     text-align: center;
     text-transform: uppercase;
     float:left;
@@ -249,7 +250,7 @@ body {
 * nav info header
 */
 #nav-info-header{
-    border-bottom: 1px solid grey;
+    //border-bottom: 1px solid grey;
     height: 60px !important;
     margin-left:5px;
 }
@@ -268,9 +269,13 @@ body {
     margin-bottom:0px;
     border-radius: 0 !important;
     min-height: 130px;
-    color: #B4A486  !important;
+    color: white  !important;
     font-size: 20px;
-    background-color: #000000 !important;
+    background-color: #0D2036 !important;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus
+{
+    background-color: #0D2036 !important;
 }
 .navbar-nav li
 {
@@ -281,20 +286,20 @@ li.expanded.active-trail.dropdown
     text-decoration: underline
 }
 .active-trail.active {
-    background-color: #b4a486 !important;
+    background-color: #0D2036 !important;
     color: black !important;
     text-decoration: none;
 }
 .active-trail.active a:hover {
-    background-color: #b4a486 !important;
+    background-color: #0D2036 !important;
     color: black !important;
 }
 .active-trail{
-   border-color: #b4a486 !important;
+   border-color: #0D2036 !important;
    
 }
 .navbar a{
-    color: #B4A486 !important;
+    color: white !important;
 }
 
 #absolute_center {
@@ -313,10 +318,10 @@ li.expanded.active-trail.dropdown
 }
 .dropdown-menu
 {
-    background-color: #000000 !important;
+    background-color: #0D2036 !important;
 }
 .dropdown-menu > li > a:hover {
-    background-color: #000000;
+    background-color: #0D2036;
     background-image: none;
 }
 /*
@@ -329,10 +334,10 @@ li.expanded.active-trail.dropdown
 .node-frontpage-slide
 {
     text-align: center;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     margin-left: 20%;
     margin-right: 20%;
-    color: #B4A486 !important;
+    color: white !important;
     margin-top: 10vh;
     height: 400px;
     font-size: 70px;
@@ -342,7 +347,7 @@ li.expanded.active-trail.dropdown
     padding-right: 30px;
 }
 .node-frontpage-slide{
-    color: #B4A486 !important;
+    color: white !important;
 }
 .slide-link p {
     color: #b4a486;
@@ -413,11 +418,11 @@ li.expanded.active-trail.dropdown
  }
   #hp-read-news-block a
   {
-      color: #B4A486  !important;
+      color: white  !important;
   }
  #hp-read-news-block
  {
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     padding-top: 10px;
     width: 195px;
     height: 50px;
@@ -435,7 +440,7 @@ li.expanded.active-trail.dropdown
 */
 .modal-header , .modal-footer , .modal-content
 {
-    background: #B4A486;
+    background: #0D2036;
     color:  black;
     
 }
@@ -519,7 +524,7 @@ li.expanded.active-trail.dropdown
 */
 .gm-style .gm-style-iw
 {
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     padding:10px;
     overflow-y:scroll;
     max-height:96%;
@@ -606,9 +611,9 @@ li.expanded.active-trail.dropdown
 */
 .oc-bg-img-credit
 {
-    color: #B4A486;
+    color: white;
     float:right;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
