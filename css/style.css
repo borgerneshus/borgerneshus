@@ -11,7 +11,7 @@ html,
 body {
   height: 100%;
   position: relative;
-  font-family: arial;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #000;
   color: white;
 }
@@ -332,9 +332,9 @@ li.expanded.active-trail.dropdown
     color: white !important;
     margin-top: 10vh;
     height: 400px;
-    font-size: 70px;
+    font-size: 55px;
     font-weight: bold;
-    font-family: arial;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     padding-left: 30px;
     padding-right: 30px;
 }
