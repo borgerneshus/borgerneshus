@@ -358,11 +358,11 @@ li.expanded.active-trail.dropdown
 {
     color:#FF4F2C;
     float: left;
-    bottom: 158px;
+    bottom: 191px;
     width: 60%;
     position: absolute;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .owl-prev {
     float: left;
