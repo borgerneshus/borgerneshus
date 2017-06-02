@@ -330,13 +330,12 @@ li.expanded.active-trail.dropdown
 {
     text-align: center;
     background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
     color: white !important;
     margin-top: 10vh;
-    height: 400px;
+    height: 450px;
     font-size: 55px;
-    font-weight: bold;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     padding-left: 30px;
     padding-right: 30px;
@@ -359,7 +358,7 @@ li.expanded.active-trail.dropdown
 {
     color:#FF4F2C;
     float: left;
-    bottom: 200px;
+    bottom: 158px;
     width: 60%;
     position: absolute;
     margin-left: 20%;
