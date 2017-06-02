@@ -7,6 +7,7 @@
 a{
     color: white;
 }
+
 html, 
 body {
   height: 100%;
@@ -186,7 +187,10 @@ body {
 }
 .region-footer-left section ul li a:hover,.region-footer-middle section ul li a:hover,.region-footer-rigth section ul li a:hover
 {
-    background-color: #0D2036 !important;
+    
+}
+.navbar-inverse .navbar-nav > .active > a:hover{
+    color: #FF4F2C !important;
 }
 .page-header
 {
@@ -265,7 +269,7 @@ body {
     font-size: 20px;
     background-color: #0D2036 !important;
 }
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus
+.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:focus
 {
     background-color: #0D2036 !important;
 }
@@ -293,7 +297,6 @@ li.expanded.active-trail.dropdown
 .navbar a{
     color: white !important;
 }
-
 #absolute_center {
   transform: translateX(-50%);
   left: 50%;
@@ -609,4 +612,8 @@ li.expanded.active-trail.dropdown
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
+}
+a:hover ,a:focus , #hp-read-news-block a:hover
+{
+    color: #FF4F2C !important;
 }
