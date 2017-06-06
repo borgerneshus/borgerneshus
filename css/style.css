@@ -68,7 +68,7 @@ body {
     text-align: center;
 }
 .pane-menu-tree li > a {
-    color: #b4a486 !important;
+    color: white !important;
     text-transform: uppercase;
 }
 .pane-glokationer .field-content > a {
@@ -289,7 +289,7 @@ li.expanded.active-trail.dropdown
 }
 .active-trail.active a:hover {
     //background-color: #0D2036 !important;
-    color: white !important;
+    color: #FF4F2C !important;
 }
 .active-trail{
    border-color: #0D2036 !important;
