@@ -130,6 +130,10 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+.btn-event .field-item.even > a:focus, .btn.btn-event > div > a:hover
+{
+    color: #fff;
+}
 .views-field.views-field-field-event-category.btn.btn-event {
     margin-right: 1em;
 }
@@ -200,6 +204,7 @@ body {
 {
     background-color: #115959 !important;
 }
+
 .page-header
 {
     color: #B4A486;
