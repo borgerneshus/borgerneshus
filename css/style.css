@@ -196,7 +196,7 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover{
     color: #FF4F2C !important;
 }
-.nav > li > a:focus , .nav > li > a:hover
+.pane-content > .nav > li > a:focus , .pane-content > .nav > li > a:hover
 {
     background-color: #115959 !important;
 }
