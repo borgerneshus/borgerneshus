@@ -132,7 +132,7 @@ body {
 }
 .btn-event .field-item.even > a:focus, .btn.btn-event > div > a:hover
 {
-    color: #fff;
+    color: #fff !important;
 }
 .views-field.views-field-field-event-category.btn.btn-event {
     margin-right: 1em;
