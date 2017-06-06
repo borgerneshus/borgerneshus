@@ -121,6 +121,10 @@ body {
   border-color: #FF4F2C;
   margin-bottom: 0.3em;
 }
+.btn-event .field-item.even > a:hover
+{
+    color: white;
+}
 .btn-event .field-item.even > a, .btn.btn-event > div > a {
     color: #fff;
     font-weight: bold;
@@ -191,6 +195,10 @@ body {
 }
 .navbar-inverse .navbar-nav > .active > a:hover{
     color: #FF4F2C !important;
+}
+.nav > li > a:focus
+{
+    background-color: #115959 !important;
 }
 .page-header
 {
