@@ -625,3 +625,6 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 {
     color: #FF4F2C !important;
 }
+.close{
+    color: white !important;
+}
