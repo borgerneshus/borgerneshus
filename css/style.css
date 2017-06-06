@@ -225,7 +225,7 @@ body {
 }
 .tabs--primary a
 {
-    color: black;
+    color: white;
 }
 #user-login , .profile{
     background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png');
