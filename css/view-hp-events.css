@@ -1,18 +1,18 @@
 #view_node_more_link {
     float: left;
     margin-right: 5px;
-    color: black;
+    color: white;
 }
 #view_node_more_icon
 {
     color: red;
 }
 .view {
-    color:black;
+    color:white;
     display:inline-block;
     width: 100%;
     margin: auto;  
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
+    background-image: url('/sites/all/themes/borgerneshus/images/blue_transparent.png'); 
 }
 .view .views-field-field-title-image
 {
@@ -101,7 +101,7 @@ img {
     padding-bottom: 5px;
 }
 .view div div .views-field-title a{
-    color:black;
+    color:white;
 }
 .view div div .views-field-title h2
 {
