@@ -632,5 +632,5 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 }
 .close{
     color: white !important;
-    opacity: 0 !important;
+    opacity: 1 !important;
 }
