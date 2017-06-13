@@ -641,4 +641,5 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 .nav > li > a:focus , .nav > li > a:hover
 {
     color:#ff4f2c !important;
+    background-color: #115959 !important;
 }
