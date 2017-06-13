@@ -638,7 +638,7 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 {
     background-color: transparent !important;
 }
-.dropdown-menu> a:hover
+.dropdown-menu > li > a:hover
 {
      background-color: #115959 !important;
 }
