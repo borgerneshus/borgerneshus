@@ -634,3 +634,11 @@ a:hover ,a:focus , #hp-read-news-block a:hover
     color: white !important;
     opacity: 1 !important;
 }
+.dropdown-menu>.active>a
+{
+    background-color: transparent !important;
+}
+.nav > li > a:focus , .nav > li > a:hover
+{
+    color:#ff4f2c !important;
+}
