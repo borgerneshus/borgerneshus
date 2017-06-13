@@ -200,7 +200,7 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover{
     color: #FF4F2C !important;
 }
-.menu-name-menu-nyhed-termer-menu > .nav > li > a:focus , .menu-name-menu-nyhed-termer-menu > .nav > li > a:hover
+.pane-content > .menu-block-wrapper > .nav > li > a:focus , .pane-content > .menu-block-wrapper > .nav > li > a:hover
 {
     background-color: #115959 !important;
 }
