@@ -78,11 +78,11 @@ img {
     padding-left: 5px;
 }
 #edit-field-dato-value-wrapper > label {
-    color: #B4A486;
+    color: white;
 }
 .pane-title{
     text-align: center;
-     color: #B4A486  !important;
+     color: white  !important;
      margin: 0px;
 }
 .views-row {
