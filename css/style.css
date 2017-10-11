@@ -700,3 +700,10 @@ width:100%;
     border-top: 1px solid white !important;
     border-bottom: 1px solid white !important;
 }
+/*
+* Kontakt formular quick fix.
+*/
+#edit-submitted-afdeling
+{
+    color:black;
+}
