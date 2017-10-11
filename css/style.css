@@ -647,3 +647,47 @@ a:hover ,a:focus , #hp-read-news-block a:hover
     color:#ff4f2c !important;
     
 }
+/*
+* accordion styling
+*/
+.views-bootstrap-accordion-plugin-style
+{
+    color:black !important;
+}
+.node-afdeling h2
+{
+    display:none;
+}
+.field-name-opening-hours-week .field-label
+{
+    display: none;
+}
+.openhours-accordion .field-name-field-department-image
+{
+float:left;
+padding:10px;
+}
+.openhours-accordion .field-name-field-department-image img
+{
+    width: 150px;
+    height: 150px;
+}
+.openhours-accordion .field-name-opening-hours-week 
+{
+float:left;
+}
+.openhours-accordion .field-name-body
+{
+float:left;
+width:100%;
+}
+/*
+* sidr style overwrite
+*/
+.sidr{
+    background:#131f30 !important;
+}
+.sidr ul li {
+    border-top: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+}
