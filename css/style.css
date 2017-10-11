@@ -328,6 +328,7 @@ li.expanded.active-trail.dropdown
 .dropdown-menu
 {
     background-color: #0D2036 !important;
+    min-width: auto !important;
 }
 .dropdown-menu > li > a:hover {
     //background-color: #FF4F2C;
