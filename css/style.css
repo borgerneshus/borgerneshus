@@ -686,7 +686,7 @@ float:left;
 float:left;
 width:100%;
 }
-.opening-hours-week .next
+.opening-hours-week .next , .opening-hours-week .prev
 {
     color:black;
 }
