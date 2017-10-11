@@ -659,6 +659,10 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 {
     display:none;
 }
+.view-open-hours .panel-heading{
+    background-color: #115959;
+    color: white;
+}
 .field-name-opening-hours-week .field-label
 {
     display: none;
