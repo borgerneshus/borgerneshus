@@ -15,6 +15,11 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    .logo img
+    {
+        width: 155px;
+        height: 78px;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1024px) { 
     .node-frontpage-slide
@@ -32,5 +37,10 @@
     {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .logo img
+    {
+        width: 155px;
+        height: 78px;
     }
 }
