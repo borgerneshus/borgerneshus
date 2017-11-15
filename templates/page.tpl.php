@@ -229,6 +229,13 @@
              endif;
             ?>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 footer_address">
+            <?php
+             if (!empty($page['address-bottom'])):
+             echo render($page['address-bottom']); 
+             endif;
+            ?>
+        </div>
     </div>
 </footer>
 <!--- 
