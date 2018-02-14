@@ -659,7 +659,7 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 /*
 * accordion styling
 */
-.views-bootstrap-accordion-plugin-style
+.views-bootstrap-accordion-plugin-style , #accordion
 {
     color:black !important;
 }
@@ -667,7 +667,7 @@ a:hover ,a:focus , #hp-read-news-block a:hover
 {
     display:none;
 }
-.view-open-hours .panel-heading{
+.view-open-hours .panel-heading , #accordion .panel-heading{
     background-color: #115959;
     color: white;
 }
