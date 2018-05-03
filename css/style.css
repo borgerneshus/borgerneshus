@@ -682,8 +682,8 @@ padding:10px;
 }
 .openhours-accordion .field-name-field-department-image img
 {
-    width: 150px;
-    height: 150px;
+    width: 154px;
+    height: auto;
 }
 .openhours-accordion .field-name-opening-hours-week 
 {
