@@ -84,7 +84,7 @@
     <div class="row well">
         <?php 
         $classes = "col-lg-9 col-md-8 col-sm-8 col-xs-12 col-xs-height col-full-height";
-        if($node->field_g_r_full_side[0]['value'] == 0) {
+        if(isset($node->field_g_r_full_side[0]['value']) && $node->field_g_r_full_side[0]['value'] == 1) {
             $classes = "col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-height col-full-height";
         }
         ?>
