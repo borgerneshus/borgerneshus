@@ -84,7 +84,7 @@
     <div class="row well">
         <?php 
         $classes = "col-lg-9 col-md-8 col-sm-8 col-xs-12 col-xs-height col-full-height";
-        if(isset($node->field_g_r_full_side[0]['value']) && $node->field_g_r_full_side[0]['value'] == 1) {
+        if(isset($node->field_g_r_full_side['und'][0]['value']) && $node->field_g_r_full_side['und'][0]['value'] == 1) {
             $classes = "col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-height col-full-height";
         }
         ?>
@@ -148,7 +148,7 @@
             </div>
 
         </div>
-        <?php if($node->field_g_r_full_side[0]['value'] == 0) {?>
+        <?php if($node->field_g_r_full_side['und'][0]['value'] == 0) {?>
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="padding-left:0;padding-right:0;">            
             <?php print render($content['field_title_image']); ?>
             <div class="info-field">
