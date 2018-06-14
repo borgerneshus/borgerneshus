@@ -719,3 +719,10 @@ width:100%;
 {
     color:black;
 }
+/*
+* iframe standard size for embedding agenda screen. works for mobile
+*/
+.bhus-embed-iframe-agenda-screen
+{
+    min-height: 500px;
+}
