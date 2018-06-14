@@ -104,6 +104,7 @@ jQuery(document).ready(function(){
         jQuery('#gtranslate').modal('hide');
     });
         if ($('iframe').exists()) {
+            $('iframe').height($('iframe').contents().height());
            //resizeIframe($('iframe'));
            // $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 90%; height: 100%');
            // $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
@@ -155,6 +156,3 @@ jQuery(document).ready(function(){
     }
 
  }(jQuery);
- function resizeIframe(iframe) {
-    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-}
