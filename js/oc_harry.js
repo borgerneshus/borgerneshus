@@ -104,10 +104,17 @@ jQuery(document).ready(function(){
         jQuery('#gtranslate').modal('hide');
     });
         if ($('iframe').exists()) {
-            $('iframe').height($('iframe').contents().height());
+            //$('iframe').height(500);
            //resizeIframe($('iframe'));
-           // $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 90%; height: 100%');
-           // $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
+           if(isiOS || isAndroid || isWP)
+           {
+                $('iframe').attr('style', 'height: 100%;min-height:500px');
+           }
+           else
+           {
+             $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 90%; height: 100%');
+             $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
+           }
         }
 
     checkSize();
