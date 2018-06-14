@@ -103,9 +103,10 @@ jQuery(document).ready(function(){
     jQuery('body').on('click','.nturl',function(){
         jQuery('#gtranslate').modal('hide');
     });
-            if ($('iframe').exists()) {
-            $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 90%; height: 100%');
-            $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
+        if ($('iframe').exists()) {
+            resizeIframe($('iframe'));
+           // $('iframe').attr('style', 'position: absolute; left: 0px; top: 0px; width: 90%; height: 100%');
+           // $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
         }
 
     checkSize();
@@ -152,5 +153,7 @@ jQuery(document).ready(function(){
        var html = $('<div class="oc-bg-img-credit hidden-xs" >Foto: '+image_credit+'</div>');
        $('#footer').before(html);
     }
-    
+    function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    }
  }(jQuery);

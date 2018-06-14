@@ -725,4 +725,5 @@ width:100%;
 .bhus-embed-iframe-agenda-screen
 {
     min-height: 500px;
+    height: auto;
 }
